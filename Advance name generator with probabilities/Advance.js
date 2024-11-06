@@ -42,6 +42,8 @@ function getRandomWord(randomValue, wordsWithProbabilities) {
 This will help you organize the code better and make it reusable! Let me know if you'd like help with this one.
 */
 
+//hello
+
 function getFirstWord() {
     let randomValue = Math.random();
     
