@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+/* Customize the main scrollbar of the entire page */
+html::-webkit-scrollbar {
+    width: 16px; /* Set the width of the scrollbar */
+  }
+  
+  /* Track (background) of the scrollbar */
+  html::-webkit-scrollbar-track {
+    background-color: #e4e4e4; /* Set the background color */
+    border-radius: 100px; /* Add some rounded corners */
+  }
+  
+  /* Thumb (scrolling handle) of the scrollbar */
+  html::-webkit-scrollbar-thumb {
+    background-color: #d4aa70; /* Set the color of the thumb */
+    border-radius: 100px; /* Add rounded corners to the thumb */
+  }
+  
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/7c0e18aa-2c95-474d-802e-7f30e75dcca4/web/IN-en-20241014-TRIFECTA-perspective_e7121311-c11e-4809-a3e6-22abffa33569_large.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.main-title {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+
+}
+
+.main-title> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.main-title> :nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-title> :nth-child(3) {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.btn-red {
+    color: white;
+    background-color: red;
+    cursor: pointer;
+
+}
+
+nav button {
+
+    position: relative;
+    gap: 20px;
+    color: white;
+
+}
+
+.eng-btn {
+
+    background-color: rgba(44, 40, 40, 0.55);
+    /* Use rgba to set background transpency   */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 2px solid white;
+    width: 130px;
+    position: relative;
+    padding: 6px 20px;
+
+}
+
+.sing-btn {
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 900;
+    width: 106px;
+    position: relative;
+    padding: 5px 20px;
+}
+
+
+
+.form-btn {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    top: 0px;
+}
+
+.form-btn input[type="text"] {
+    width: 365px;
+    height: 53px;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: rgb(22, 20, 24);
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    opacity: 0.80;
+}
+
+.form-btn input[type="text"]::placeholder {
+    color: white;
+}
+
+.form-btn input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(15, 15, 15);
+}
+
+.form-btn button {
+    background-color: #e50914;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    cursor: pointer;
+
+
+}
+
+.form-btn img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    filter: invert();
+    margin-left: 15px;
+
+
+}
+
+.main-2 {
+    margin: -14px 165px;
+    padding: 53px 0px;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+
+}
+
+.trending-text {
+    font-size: 23px;
+}
+
+
+.trend-btn {
+    display: flex;
+    gap: 20px;
+    height: 40px;
+
+
+}
+
+.country {
+    background-color: rgba(44, 40, 40, 0.55);
+    /* Use rgba to set background transpency   */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 5px;
+    color: white;
+    border: 1px solid white;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        2px 2px 40px rgba(0, 0, 0, 0.2),
+        /* Shadow from top */
+        2px 2px 20px rgba(0, 0, 0, 0.2),
+        /* Shadow from bottom */
+        -2px 0px 0px rgba(0, 0, 0, 0.2),
+        /* Shadow from left */
+        -2px 0px 0px rgba(0, 0, 0, 0.2)
+}
+
+.country span {
+    font-size: 15px;
+}
+
+.trend-movies {
+    background-color: rgba(44, 40, 40, 0.55);
+    /* Use rgba to set background transpency   */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        2px 2px 40px rgba(0, 0, 0, 0.2),
+        /* Shadow from top */
+        2px 2px 20px rgba(0, 0, 0, 0.2),
+        /* Shadow from bottom */
+        -2px 0px 0px rgba(0, 0, 0, 0.2),
+        /* Shadow from left */
+        -2px 0px 0px rgba(0, 0, 0, 0.2)
+}
+
+.trend-movies span {
+    font-size: 15px;
+}
+
+.down-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    filter: invert();
+    margin-left: 15px;
+
+}
+
+.movies-card {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+    width: 80vw;
+    max-width: 100vw;
+    position: relative;
+    top: 20px;
+    /* flex-wrap: nowrap; */
+    overflow-y: hidden;
+
+
+
+}
+
+.movies-card::-webkit-scrollbar {
+    height: 8px;
+}
+
+.movies-card::-webkit-scrollbar-thumb {
+    background-color: #3b3a3a;
+    border-radius: 5px;
+}
+
+.card {
+    width: 227px;
+    height: 284px;
+    background-size: contain;
+    /* Keep the original image size without zooming */
+    background-position: center;
+    /* Center the image within the card */
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Ensure the image stays inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: Add shadow for a nice effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    z-index: 1;
+
+}
+
+.card::before {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /* Ensure it stays behind the box */
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    /* Only the box zooms in, not the background image */
+}
+
+/* Basic responsive setup */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    nav {
+        max-width: 80vw;
+    }
+
+    .form-btn input[type="text"] {
+        width: 300px;
+    }
+
+    .movies-card {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust main title for smaller screens */
+    .main-title> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .main-title> :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .main-title> :nth-child(3) {
+        font-size: 13px;
+    }
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .form-btn input[type="text"] {
+        width: 250px;
+    }
+
+    .movies-card {
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 180px;
+        height: 240px;
+    }
+
+    .main-2 {
+        margin: 0px 20px;
+        padding: 20px 0;
+    }
+
+    .Documentation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-4 {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Adjusting for mobile view */
+    nav {
+        max-width: 95vw;
+    }
+
+    .main-title> :nth-child(1) {
+        font-size: 24px;
+    }
+
+    .form-btn button {
+        font-size: small;
+    }
+
+    .email button {
+        font-size: small;
+    }
+
+    .form-btn input[type="text"] {
+        width: 180px;
+    }
+
+    .movies-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 150px;
+        height: 200px;
+    }
+
+    .Documentation {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .trend-btn button {
+        font-size: 14px;
+    }
+}

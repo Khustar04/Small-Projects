@@ -1,0 +1,140 @@
+.Questions {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 80px;
+    font-family: sans-serif;
+
+}
+
+.boxes {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+
+    /* background-color: aqua; */
+}
+
+.asked-question .Fsq {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.question-box1 {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    background-color: #2d2d2d;
+    cursor: pointer;
+    padding: 30px;
+    transition: box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease
+}
+
+.question-box1:hover {
+    background-color: rgba(249, 249, 249, 0.326);
+    /* Adjust color and opacity as needed */
+    opacity: 0.9;
+}
+
+.question-box1:hover {
+    transform: scale(1);
+}
+
+
+.question-box1 h3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.question-box1 img {
+    filter: invert();
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.ready-watch {
+    width: 100%;
+    height: 78vh;
+    position: relative;
+    top: 30px;
+}
+
+.ready-watch span {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.email {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    top: 20px;
+}
+
+.email .input-email[type="text"] {
+    width: 550px;
+    height: 40px;
+    padding: 10px;
+    border: 1.5px solid rgb(73, 69, 69);
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    opacity: 0.80;
+}
+
+.email .input-email[type="text"]::placeholder {
+    color: white;
+}
+
+.email .input-email[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(15, 15, 15);
+}
+
+.email button {
+    background-color: #e50914;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 225px;
+    height: 63px;
+}
+
+.arrow-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    filter: invert();
+    margin-left: 15px;
+
+
+}

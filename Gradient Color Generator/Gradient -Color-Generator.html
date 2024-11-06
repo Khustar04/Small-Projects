@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient  Color Generator</title>
+
+    <!-- Write a function that generates a random linear gradient background for a specific div each time a button is clicked. The gradient should transition between two random colors. -->
+    <style>
+        body {
+            transition: background-color 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #colorButton {
+            height: 22px;
+            padding: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 180px;
+            margin: 80px 40px;
+            font-size: 20px;
+            font-weight: 500;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button id="colorButton">Change Background Color</button>
+    <script>
+        function getrandcolor() {
+            let randomcolors = "0123456789ABCDEF"
+            let colors = "#"
+            for (let i = 0; i < 6; i++) {
+                colors += randomcolors[Math.floor(Math.random() * 16)]
+
+            }
+            return colors;
+        }
+
+        function getGradientColor() {
+            const FirstColor = getrandcolor();
+            const SecondColor = getrandcolor();
+
+            document.body.style.background = `linear-gradient(to right, ${FirstColor}, ${SecondColor})`
+        }
+
+        document.getElementById('colorButton').addEventListener('click', getGradientColor)
+
+
+
+
+    </script>
+</body>
+
+</html>

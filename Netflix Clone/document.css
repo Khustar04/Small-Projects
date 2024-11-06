@@ -1,0 +1,112 @@
+.more-reason {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    font-family: sans-serif;
+
+}
+
+.Documentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    gap: 10px;
+}
+
+.document {
+
+    position: relative;
+    top: 30px;
+
+}
+
+.card-4 {
+    width: 100%;
+    max-width: 320px;
+    height: 340px;
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: Add shadow for a nice effect */
+    background: #200122;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6f0000, #200122);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6f0000, #200122);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 90px;
+    position: relative;
+    opacity: 0.77;
+
+}
+
+.card-4 span {
+    display: flex;
+    top: 25px;
+    position: relative;
+    font-size: 22px;
+    text-overflow: inherit;
+}
+
+.card-4 p {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    overflow: hidden;
+    font-size: small;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    word-wrap: break-word;
+    /* Wrap long words onto the next line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.88;
+}
+
+.watch {
+    position: relative;
+    left: 13px;
+}
+
+.create {
+    position: relative;
+    left: auto;
+}
+
+.everywhere {
+    position: relative;
+    left: -25px;
+}
+
+.tvs {
+    top: -52px;
+    left: 20px;
+}
+
+.Save {
+    top: -50px;
+    left: -17px;
+}
+
+.Stream {
+    top: -52px;
+    left: -13px;
+}
+
+.kids {
+    top: -52px;
+}

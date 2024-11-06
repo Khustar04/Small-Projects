@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Picker</title>
+    <!-- Create a simple webpage with three input fields for RGB values (red, green, blue) ranging from 0 to 255. When the user inputs values, change the background color of a div to the specified RGB color. -->
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #colorBox {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+       
+
+        #red{
+            padding: 10px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 10px;
+            
+
+        }
+        #green{
+            padding: 10px;
+            width: 100px;
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        #blue{
+            padding: 10px;
+            width: 100px;
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>RGB Color Picker</h1>
+    <input type="number" id="red" placeholder="Red (0-255)" min="0" max="255">
+    <input type="number" id="green" placeholder="Green (0-255)" min="0" max="255">
+    <input type="number" id="blue" placeholder="Blue (0-255)" min="0" max="255">
+    <div id="colorBox"></div>
+
+    <script>
+        const redInput = document.getElementById('red')
+        const greenInput = document.getElementById('green')
+        const blueInput = document.getElementById('blue')
+        const colorbox = document.getElementById('colorBox')
+
+        function UpdetColor(){
+            const red = redInput.value || 0;
+            const Green = greenInput.value || 0;
+            const blue = blueInput.value || 0;
+          colorbox.style.backgroundColor = `rgb(${red}, ${Green}, ${blue})`
+
+        };
+         red.addEventListener('click', UpdetColor)
+         green.addEventListener('click', UpdetColor)
+         blue.addEventListener('click', UpdetColor)
+
+    </script>
+</body>
+</html>
